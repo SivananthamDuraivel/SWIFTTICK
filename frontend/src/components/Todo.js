@@ -16,7 +16,7 @@ function Todo() {
   
     // Fetch tasks from database    
     useEffect(() => { 
-        axios.get('http://127.0.0.1:3001/getTodoList') 
+        axios.get('https://swifttick.vercel.app/getTodoList') 
             .then(result => { 
                 setTodoList(result.data) 
             }) 
@@ -48,7 +48,7 @@ function Todo() {
             return; 
         } 
   
-        axios.post('http://127.0.0.1:3001/addTodoList', { task: newTask, status: newStatus, deadline: newDeadline }) 
+        axios.post('https://swifttick.vercel.app/addTodoList', { task: newTask, status: newStatus, deadline: newDeadline }) 
             .then(res => { 
                 console.log(res); 
                 window.location.reload(); 
@@ -71,7 +71,7 @@ function Todo() {
         } 
   
         // Updating edited data to the database through updateById API 
-        axios.post('http://127.0.0.1:3001/updateTodoList/' + id, editedData) 
+        axios.post('https://swifttick.vercel.app/updateTodoList/' + id, editedData) 
             .then(result => { 
                 console.log(result); 
                 setEditableId(null); 
@@ -86,7 +86,7 @@ function Todo() {
   
     // Delete task from database 
     const deleteTask = (id) => { 
-        axios.delete('http://127.0.0.1:3001/deleteTodoList/' + id) 
+        axios.delete('https://swifttick.vercel.app/deleteTodoList/' + id) 
             .then(result => { 
                 console.log(result); 
                 window.location.reload(); 
