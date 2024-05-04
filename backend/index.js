@@ -7,7 +7,7 @@ const TodoModel = require("./models/todoList")
   
 var app = express(); 
 app.use(cors({
-    origin:["https://swifttick-frontend.vercel.app/"],
+    origin:["https://swifttick-frontend.vercel.app"],
     methods:["GET","POST","PUT","DELETE"],
     credentials:true
 })); 
