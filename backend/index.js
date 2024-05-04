@@ -15,7 +15,10 @@ app.use(express.json());
     console.log(err);
  })
   
-  
+app.get('/',(req,res)=>{
+    console.log("working")
+})
+
 app.get("/getTodoList", (req, res) => { 
     TodoModel.find({}) 
         .then((todoList) => res.json(todoList)) 
