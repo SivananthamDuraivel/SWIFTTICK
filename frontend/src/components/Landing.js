@@ -136,7 +136,7 @@ const Landing = () => {
 <div className="carousel-wrapper">
 <div className="carousel-container">
   <div className="carousel">
-    <div className="image-one"><img alt="img"  src={c1}></img><p className='text-center'>5 million+ downloads</p></div>
+    <div className="image-one"><img alt="img"  src={c1}></img><p className='text-center '>5 million+ downloads</p></div>
     <div className="image-two"><img alt="img"  src={c2}></img><p className='text-center'>1 billion+ tasks completed</p></div>
     <div className="image-three"><img alt="img"  src={c3}></img><p className='text-center'>100+ countries world wide</p></div>
     <div className="image-four"><img alt="img"  src={temp}></img><p className='text-center'>Template gallery </p></div>

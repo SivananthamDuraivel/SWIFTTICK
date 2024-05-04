@@ -532,7 +532,7 @@ margin-bottom: 1em;
   &:hover {
     animation-play-state: paused;
   }
-  .image-one {
+  /* .image-one {
     background-image: url("https://images.unsplash.com/photo-1480936600919-bffa6b7ecf1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
   }
   .image-two {
@@ -540,7 +540,7 @@ margin-bottom: 1em;
   }
   .image-three {
     background-image: url("https://images.unsplash.com/photo-1525278070609-779c7adb7b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-  }
+  } */
 }
 
 @keyframes sliding {
@@ -628,3 +628,12 @@ margin-bottom: 1em;
   margin-left: 3rem;
 }
 
+.carousel-item img{
+  width: 200px;
+  height: 100%;
+}
+
+.image-one,.image-two,.image-three,.image-four,.image-five,.image-six,.image-seven{
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
